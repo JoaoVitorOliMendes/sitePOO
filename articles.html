@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Técnicas de Programação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-5.1.3-dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column p-0 mainDiv">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01"  >
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="index.html">Videos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Artigos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#!">Podcast</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#!">Grupo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NAVBAR-->
+
+        <div class="container h-100 article pt-5">
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center">
+                    <h1>
+                        <b>Polimorfismo</b>
+                    </h1>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center mt-5">
+                    <span>
+                        &#8195;&#8195;&#8195;O Polimorfismo tem como definição a multiplicidade e mutabilidade de métodos e objetos. De acordo com o dicionário a palavra significa: <i><b>A qualidade ou estado de ser capaz de assumir diferentes formas</b></i>. Pode-se observar o uso dessa palavra na Química (átomos alótropos), na Medicina (o polimorfismo genético e do DNA) e em várias outras áreas.
+                    </span>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center mt-5">
+                    <img src="img/borboleta.jpg" alt="https://www.google.com.br/url?sa=i&url=https%3A%2F%2Falimentusconsultoria.com.br%2Fum-sonho-compartilhado-e-um-sonho-maior%2F&psig=AOvVaw1B67zb4wFNdcU1P6lLX0Xl&ust=1634758085453000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIiYx-Sa1_MCFQAAAAAdAAAAABAD" class="imgNormal">
+                </div>
+                <div class="col-12 d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
+                    <span>
+                        &#8195;&#8195;&#8195;Na ciência da computação o polimorfismo se marca como a técnica da qual os programadores selecionam e distinguem as funcionalidades de certo sistema, utilizando-as de forma dinâmica no decorrer de sua execução. Com o Polimorfismo, os mesmos atributos e objetos podem ser reutilizados em objetos distintos, por meio da herança, porém, podendo ter implementações lógicas diferentes. É uma ótima prática de programação, pois, com a versatilidade e variedade de opções, em muitos casos podem resumir várias linhas de código em apenas um único comando, além de tornar cada classe filho diferenciada, em relação aos métodos herdados da classe pai.
+                    </span>
+                    <span class="text-center mt-5"><b>Pode-se dividir o polimorfismo em 2:</b></span>
+                    <ul class="w-25 mt-4">
+                        <li>
+                            <b>Polimorfismo Estático ou Sobrecarga;</b>
+                        </li>
+                        <li>
+                            <b>Polimorfismo Dinâmico ou Sobreposição;</b>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-5 d-flex justify-content-center">
+                    <h3>Polimorfismo Estático ou Sobrecarga</h3>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center mt-5">
+                    <img src="img/exemplo1.png" alt="" class="imgNormal">
+                </div>
+                <div class="col-lg-6 d-flex align-items-center mt-5">
+                    <span>
+                        &#8195;&#8195;&#8195;O Polimorfismo Estático se dá quando temos a mesma operação implementada várias vezes, em uma mesma classe.
+                        Como no <span class="highlight">@EXEMPLO 1</span> na classe <span class="highlight">@carro</span>, em que o mesmo método <span class="highlight">@mudarVelocidade</span> é reescrito como uma nova função, estendendo a função original.
+                        Essa sobrescrição é feita com a adição de um novo parâmetro <span class="highlight">@frear</span>, pode-se obter o mesmo efeito, em Java, com a mudança
+                        do tipo de parâmetro ou a mudança do tipo de retorno
+                    </span>
+                </div>
+                <div class="col-12 mt-5 d-flex justify-content-center">
+                    <h3>Polimorfismo Dinâmico ou Sobreposição</h3>
+                </div>
+                <div class="col-lg-12 d-flex align-items-center mt-5">
+                    <span>
+                        &#8195;&#8195;&#8195;Já o Polimorfismo Dinâmico se dá quando é criada uma segunda classe filha que estende as propriedades da classe pai.
+                        Pode-se observar esse tipo de Polimorfismo no <span class="highlight">@EXEMPLO 2</span> e <span class="highlight">@EXEMPLO 3</span> nas classes <span class="highlight">@carroDeCorrida</span> e <span class="highlight">@caminhao</span> respectivamente.
+                        Nesses casos, os métodos foram mudados para atender as requisições de cada classe.
+                        No carro de corrida os valores velocidade e a freenagem são dobrados, já no caminhão  os mesmos perdem metade do valor
+                    </span>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center mt-5">
+                    <img src="img/exemplo2.png" alt="" class="imgNormal">
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center mt-5">
+                    <img src="img/exemplo3.png" alt="" class="imgNormal">
+                </div>
+            </div>
+        </div>
+<!-- 
+
+
+Pode-se dividir o polimorfismo em 2:
+
+Polimorfismo Estático ou Sobrecarga;
+Polimorfismo Dinâmico ou Sobreposição;
+
+O Polimorfismo Estático se dá quando temos a mesma operação implementada várias vezes na mesma classe.
+Como { @EXEMPLO 1 } na classe { @carro }, em que o mesmo método { @mudarVelocidade } é reescrito como uma nova função que extende a função original.
+Essa sobrescrição é feita com a adição de um novo parametro { @frear }, pode-se obter o mesmo efeito, em Java, com a mudança
+do tipo de parametro ou a mudança do tipo de retorno
+
+Já o Polimorfismo Dinâmico se dá quando é criada uma segunda classe filha que extende as propriedades da classe pai.
+Pode-se observar esse tipo de Polimorfismo no { @EXEMPLO 2 } e { @EXEMPLO 3 } nas classes { @carroDeCorrida } e { @caminhao } respectivamente.
+Nesses casos os métodos foram mudados para atender as requisições de cada classe.
+No carro de corrida os valores velocidade e a freeagem são dobrados, já no caminhao os mesmos perdem metade do valor -->
+</body>
+</html>
