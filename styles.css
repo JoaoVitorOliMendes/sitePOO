@@ -55,6 +55,11 @@ body {
     background-color: #22558f !important;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    box-shadow: none;
+}
+
 .navbar-brand {
     font-size: unset;
     height: 3.5rem;
@@ -146,7 +151,7 @@ body {
 }
 
 #typewriter{
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
     color: #ffffff;
 }
@@ -154,6 +159,22 @@ body {
     content: "|";
     animation: blink 500ms linear infinite alternate;
     color: #ffffff;
+}
+
+@media (max-width: 990px) {
+    #typewriter{
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 525px) {
+    #typewriter{
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 420px) {
+    #typewriter{
+        font-size: 0.5rem;
+    }
 }
 
 @-webkit-keyframes blink{
