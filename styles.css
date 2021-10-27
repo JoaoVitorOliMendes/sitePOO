@@ -157,6 +157,12 @@ body {
     height: 20rem;
 }
 
+.groupImg {
+    opacity: 0.5;
+    width: 20rem;
+    height: 100%;
+}
+
 .card {
     height: 32.5rem;
 }
